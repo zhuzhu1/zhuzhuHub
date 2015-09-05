@@ -1,4 +1,4 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,59 +8,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.textviewtest.MainActivity" 
     android:orientation="vertical">
-    <TableRow>
-	<TextView 
+   
+	<ToggleButton
+	    android:id="@+id/toggle"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:text="性别"
-	    android:textSize="16px"/>
+	    android:textOff="横向排列"
+	    android:textOn="纵向排列"
+	    android:checked="true"/>
+	<Switch
+	    android:id="@+id/switcher"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textOff="横向排列"
+	    android:textOn="纵向排列"
+	    android:thumb="@drawable/ic_launcher"
+	    android:checked="true"/>
 	
-	<RadioGroup
-	    android:id="@+id/rg"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center_horizontal">
-		<RadioButton 
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:id="@+id/male"
-		    android:text="男"
-		    android:checked="true"/>
-		<RadioButton 
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:id="@+id/female"
-		    android:text="女"/>
-	</RadioGroup>
-	</TableRow>
-	<TableRow>
-	    <TextView
+	<LinearLayout android:id="@+id/test"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <Button
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="喜欢的颜色"
-	        android:textSize="16px"/>
-	    <LinearLayout 
-	        android:layout_gravity="center_horizontal"
-	        android:orientation="vertical"
+	        android:text="测试按钮1"/>
+	    <Button
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content">
-	        <CheckBox
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:text="红色"
-	            android:checked="true"/>
-	        <CheckBox
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:text="蓝色"/>
-	        <CheckBox
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:text="绿色"/>
-
-	    </LinearLayout>
-	</TableRow>
-	<TextView
-	    android:id="@+id/show"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"/>
-</TableLayout>
+	        android:layout_height="wrap_content"
+	        android:text="测试按钮2"/>
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="测试按钮3"/>
+	</LinearLayout>
+</LinearLayout>
