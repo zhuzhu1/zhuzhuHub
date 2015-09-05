@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,20 +7,75 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.textviewtest.MainActivity" 
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:stretchColumns="1">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="带边框的文本"
-        android:textSize="24pt"
-        android:background="@drawable/bg_border" />
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写登录账号"
+            android:selectAllOnFocus="true"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"/>
+    </TableRow>
     
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="渐变背景的文本"
-        android:textSize="24pt"
-        android:background="@drawable/bg_border2" />
-
-</LinearLayout>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="年龄："
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="生日："
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="电话号码："
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写您的电话号码"
+            android:selectAllOnFocus="true"
+            android:inputType="phone"/>
+    </TableRow>
+    
+   <Button 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="注册"
+       />
+</TableLayout>
