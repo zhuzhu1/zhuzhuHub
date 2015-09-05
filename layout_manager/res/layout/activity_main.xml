@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,45 +8,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.layout_manager.MainActivity" 
     android:orientation="vertical"
+    android:rowCount="6"
+    android:columnCount="4"
+    android:id="@+id/root"
     >
 	<TextView 
-	    android:id="@+id/view01"
-	    android:layout_width="wrap_content"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:background="@drawable/ic_launcher"
-	    android:layout_centerInParent="true"
+	    android:layout_columnSpan="4"
+	    android:textSize="50sp"
+	    android:layout_marginLeft="4px"
+	    android:layout_marginRight="4px"
+	    android:padding="5px"
+	    android:layout_gravity="right"
+	    android:background="#eee"
+	    android:textColor="#000"
+	    android:text="0"
 	    />
-	<TextView 
-	    android:id="@+id/view02"
-	    android:layout_width="wrap_content"
+	<Button
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:background="@drawable/ic_launcher"
-	    android:layout_above="@id/view01"
-	    android:layout_alignLeft="@id/view01"
-	    />
-	<TextView 
-	    android:id="@+id/view03"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:background="@drawable/ic_launcher"
-	    android:layout_below="@id/view01"
-	    android:layout_alignLeft="@id/view01"
-	    />
-	<TextView 
-	    android:id="@+id/view04"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:background="@drawable/ic_launcher"
-	    android:layout_toLeftOf="@id/view01"
-	    android:layout_alignTop="@id/view01"
-	    />
-	<TextView 
-	    android:id="@+id/view05"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:background="@drawable/ic_launcher"
-	    android:layout_toRightOf="@id/view01"
-	    android:layout_alignTop="@id/view01"
+	    android:layout_columnSpan="4"
+	    android:text="清除"
 	    />
 	
-</RelativeLayout>
+</GridLayout>
