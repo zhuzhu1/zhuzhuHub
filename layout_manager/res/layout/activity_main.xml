@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,121 +7,59 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.layout_manager.MainActivity" 
-    android:orientation="vertical">
-    
-<TableLayout 
-    android:id="@+id/TableLayout01"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:shrinkColumns="1"
-    android:stretchColumns="2">
-    <Button 
-        android:id="@+id/ok1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="独自一样的按钮"
-        />
-    <TableRow>
-        <Button 
-        android:id="@+id/ok2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="普通按钮"
-        />
-        <Button 
-        android:id="@+id/ok3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="收缩的按钮"
-        />
-        <Button 
-        android:id="@+id/ok4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="拉伸的按钮"
-        />
-    </TableRow>
-</TableLayout>
-
-<TableLayout android:id="@+id/TableLayout02"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:collapseColumns="1"
     >
-    <Button 
-        android:id="@+id/ok5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="独自一样的按钮"
-        />
-    <TableRow>
-        <Button 
-        android:id="@+id/ok6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="普通按钮"
-        />
-        <Button 
-        android:id="@+id/ok7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="隐藏的按钮"
-        />
-        <Button 
-        android:id="@+id/ok8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="普通按钮"
-        />
-    </TableRow>
-</TableLayout>
-
-<TableLayout android:id="@+id/TableLayout03"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:stretchColumns="1,2"
-    >
-    <Button 
-        android:id="@+id/ok9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="独自一样的按钮"
-        />
-    <TableRow>
-        <Button 
-        android:id="@+id/ok10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="普通按钮"
-        />
-        <Button 
-        android:id="@+id/ok11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="拉伸的按钮"
-        />
-        <Button 
-        android:id="@+id/ok12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="拉伸的按钮"
-        />
-    </TableRow>
-    
-    <TableRow>
-        <Button 
-        android:id="@+id/ok13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="普通按钮"
-        />
-        <Button 
-        android:id="@+id/ok14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="拉伸的按钮"
-        />
-        
-    </TableRow>
-</TableLayout>
-</LinearLayout>
+	<TextView 
+	    android:id="@+id/view01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="320px"
+	    android:height="320px"
+	    android:background="#f00"
+	    />
+	<TextView 
+	    android:id="@+id/view02"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="280px"
+	    android:height="280px"
+	    android:background="#0f0"
+	    />
+	<TextView 
+	    android:id="@+id/view03"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="240px"
+	    android:height="240px"
+	    android:background="#00f"
+	    />
+	<TextView 
+	    android:id="@+id/view04"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="200px"
+	    android:height="200px"
+	    android:background="#ff0"
+	    />
+	<TextView 
+	    android:id="@+id/view05"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="160px"
+	    android:height="160px"
+	    android:background="#f0f"
+	    />
+	<TextView 
+	    android:id="@+id/view06"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:width="120px"
+	    android:height="120px"
+	    android:background="#0ff"
+	    />
+</FrameLayout>
