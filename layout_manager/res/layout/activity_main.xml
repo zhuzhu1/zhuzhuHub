@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,59 +7,46 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.layout_manager.MainActivity" 
+    android:orientation="vertical"
     >
 	<TextView 
 	    android:id="@+id/view01"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="320px"
-	    android:height="320px"
-	    android:background="#f00"
+	    android:background="@drawable/ic_launcher"
+	    android:layout_centerInParent="true"
 	    />
 	<TextView 
 	    android:id="@+id/view02"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="280px"
-	    android:height="280px"
-	    android:background="#0f0"
+	    android:background="@drawable/ic_launcher"
+	    android:layout_above="@id/view01"
+	    android:layout_alignLeft="@id/view01"
 	    />
 	<TextView 
 	    android:id="@+id/view03"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="240px"
-	    android:height="240px"
-	    android:background="#00f"
+	    android:background="@drawable/ic_launcher"
+	    android:layout_below="@id/view01"
+	    android:layout_alignLeft="@id/view01"
 	    />
 	<TextView 
 	    android:id="@+id/view04"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="200px"
-	    android:height="200px"
-	    android:background="#ff0"
+	    android:background="@drawable/ic_launcher"
+	    android:layout_toLeftOf="@id/view01"
+	    android:layout_alignTop="@id/view01"
 	    />
 	<TextView 
 	    android:id="@+id/view05"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="160px"
-	    android:height="160px"
-	    android:background="#f0f"
+	    android:background="@drawable/ic_launcher"
+	    android:layout_toRightOf="@id/view01"
+	    android:layout_alignTop="@id/view01"
 	    />
-	<TextView 
-	    android:id="@+id/view06"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:width="120px"
-	    android:height="120px"
-	    android:background="#0ff"
-	    />
-</FrameLayout>
+	
+</RelativeLayout>
